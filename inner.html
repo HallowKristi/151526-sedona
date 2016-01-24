@@ -6,45 +6,43 @@
 	</head>
 	<body>
 		<header class="main-header">
-		 <nav class="main-navigation">
-				 <ul>
-						<li>
-							 <a href="#">Информация</a>
-						</li>
-				 </ul>
-				 <ul> 
-						<li>
-							 <a href="#">Фото и видео</a>
-						</li>
-				 </ul>
-				 <ul>
-						<li>
-							 <a href="#">Карта штата</a>
-						</li>
-				 </ul>
-				 <ul>
-						<li>
-							 <a href="#">Гостиницы</a>
-						</li>
-				 </ul>
-			 </nav>
-		</header>
+		 <nav>
+          <ul class="main-navigation">
+             <li>
+                <a href="#">Информация</a>
+             </li>
+             <li>
+                <a href="#">Фото и видео</a>
+             </li>
+             <li><a href="#"><img src="img/logo.png" width="50" height="20" alt="Логотип"></a></li>
+             <li>
+                <a href="#">Карта штата</a>
+             </li>
+             <li>
+                <a href="#">Гостиницы</a>
+             </li>
+          </ul>
+        </nav>
+     </header>
+     <main class="container">
 		<div class="filter">
 				<form class="infrastructure" action="index.html" method="post">
-					<p>
-						ИНФРАСТРУКТУРА:
-					</p>
-					<p><label><input type="checkbox" name="pool" checked>БАССЕЙН</label></p>
-					<p><label><input type="checkbox" name="parking">ПАРКОВКА</label></p>
-					<p><label><input type="checkbox" name="wi-fi">WI-FI</label></p>
+					<span>
+						Инфраструктура:
+					</span>
+					<ul>
+					<li><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
+					<li><label><input type="checkbox" name="parking">Парковка</label></li>
+					<li><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
+					</ul>
 				</form>
 				<form class="housing" action="index.html" method="post">
-					<p>
-					  ТИП ЖИЛЬЯ:
-					</p>
-					<p><label><input type="checkbox" name="hotel" checked>ГОСТИНИЦА</label></p>
-					<p><label><input type="checkbox" name="motel" checked>МОТЕЛЬ</label></p>
-					<p><label><input type="checkbox" name="apartment" checked>АПАРТАМЕНТЫ</label></p>
+					<span>Тип жилья:</span>
+					<ul>
+					<li><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
+					<li><label><input type="checkbox" name="motel" checked>Мотель</label></li>
+					<li><label><input type="checkbox" name="apartment" checked>Апартаменты</label></li>
+					</ul>
 				</form>
 				<div class="range-filter">
             <div class="range-controls">
@@ -53,15 +51,74 @@
                 <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-            <p>СТОИМОСТЬ В СУТКИ (Р):</p>
+            <p>Стоимость в сутки (р):</p>
                 от <input class="min-price" type="text" value="0">
                 до <input class="max-price" type="text" value="3000">
-            </div>
-        </div>
+            </div>        
 				<form action="example.htm">
-				<button type="submit">ПОКАЗАТЬ</button>
+				<button type="submit">Показать</button>
 		</form>
-		
 		</div>
+		</div>
+		<div class="sorting">
+		<h3>Найдено: 3</h3>
+		<div>
+			Сортировка:
+			<ul>
+				<li><a href="#">по цене</a></li>
+				<li><a href="#">по типу</a></li>
+				<li><a href="#">по рейтингу</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="results">
+			<div class="amara">
+			    <img class="amara-logo" src="img/amara-logo.png" width="50" height="50" alt="Amara">
+				<h3>Amara Resort & SPA</h3>
+				<p>Гостиница от 3500 р.</p>
+			<form class="results-form" action="example.htm" method="post">
+                <button class="more" type="submit">Подробнее</button>
+                <button class="reservation" type="submit">Забронировать</button>
+            </form>
+            <div class="rating">Рейтинг:8,5</div>
+			</div>
+
+			<div class="desert">
+			    <img class="desert-logo" src="img/desert-logo.png" width="50" height="50" alt="Desert">
+				<h3>Desert Quail Inn</h3>
+				<p>Мотель от 2000 р.</p>
+			<form class="results-form" action="example.htm" method="post">
+                <button class="more" type="submit">Подробнее</button>
+                <button class="reservation" type="submit">Забронировать</button>
+            </form>
+            <div class="rating">Рейтинг:8,9</div>
+			</div>
+
+			<div class="villas">
+			    <img class="villas-logo" src="img/villas-logo.png" width="50" height="50" alt="Villas">
+				<h3>Villas at poco diablo</h3>
+				<p>Апартаменты от 4000 р.</p>
+			<form class="results-form" action="example.htm" method="post">
+                <button class="more" type="submit">Подробнее</button>
+                <button class="reservation" type="submit">Забронировать</button>
+            </form>
+            <div class="rating">Рейтинг:9,2</div>
+			</div>
+			</div>
+		</main>
+		<footer>
+              <section class="footer-visitsedona">
+                <a href="#">#VISITSEDONA</a>
+              </section>
+              <section class="footer-social">
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              </section>
+              <section class="footer-copyright">
+                <p>WEBSITE BY</p>
+                <a href="#"><img src="img/index-academy.png" width="20" height="20" alt="HTML Academy"></a>
+              </section>
+            </footer>
 	</body>
 </html>
