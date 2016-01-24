@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Седона</title>
+	</head>
+	<body>
+		<header class="main-header">
+		 <nav class="main-navigation">
+				 <ul>
+						<li>
+							 <a href="#">Информация</a>
+						</li>
+				 </ul>
+				 <ul> 
+						<li>
+							 <a href="#">Фото и видео</a>
+						</li>
+				 </ul>
+				 <ul>
+						<li>
+							 <a href="#">Карта штата</a>
+						</li>
+				 </ul>
+				 <ul>
+						<li>
+							 <a href="#">Гостиницы</a>
+						</li>
+				 </ul>
+			 </nav>
+		</header>
+		<div class="filter">
+				<form class="infrastructure" action="index.html" method="post">
+					<p>
+						ИНФРАСТРУКТУРА:
+					</p>
+					<p><label><input type="checkbox" name="pool" checked>БАССЕЙН</label></p>
+					<p><label><input type="checkbox" name="parking">ПАРКОВКА</label></p>
+					<p><label><input type="checkbox" name="wi-fi">WI-FI</label></p>
+				</form>
+				<form class="housing" action="index.html" method="post">
+					<p>
+					  ТИП ЖИЛЬЯ:
+					</p>
+					<p><label><input type="checkbox" name="hotel" checked>ГОСТИНИЦА</label></p>
+					<p><label><input type="checkbox" name="motel" checked>МОТЕЛЬ</label></p>
+					<p><label><input type="checkbox" name="apartment" checked>АПАРТАМЕНТЫ</label></p>
+				</form>
+				<div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div style="margin-left:0;width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+            <p>СТОИМОСТЬ В СУТКИ (Р):</p>
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="3000">
+            </div>
+        </div>
+				<form action="example.htm">
+				<button type="submit">ПОКАЗАТЬ</button>
+		</form>
+		
+		</div>
+	</body>
+</html>
