@@ -25,6 +25,7 @@
         </nav>
      </header>
      <main class="container">
+      <!-- Тут див не нужен, можно просто оставить картинку -->
       <div>
         <img class="index-logo" src="img/index-logo.png" width="500" height="200" alt="Седона">
       </div>
@@ -41,6 +42,7 @@
       </div>
     </div>
     <div class="service">
+      <!-- Тут в каждом разделе, надо проставить иконки, чаще всего их делают через <img />  -->
       <div class="service-item house"><h3>Жилье</h3><br>Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
       <div class="service-item food"><h3>Еда</h3><br>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
       <div class="service-item souvenirs"><h3>Сувениры</h3><br>Не только китайского, но и местного производства!</div>
@@ -73,21 +75,21 @@
                  <h3>Заинтересовались?</h3>
                  <p>Укажите предполагаемые даты поездки, и мы покажем вас лучшие предложение гостиниц в Седоне</p>
             <div class="location">
-            <div class="map">
+              <div class="map">
                  <img src="img/index-map.png" width="300" height="200" alt="Карта">
-            </div>
-            <div class="search">
-            <div class="search-header">
+              </div>
+              <div class="search"><!-- Тут див с классом search лишний, можно без него -->
+                <div class="search-header">
                  <h2>Поиск гостиницы в Седоне</h2>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label>Дата заезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
-                  <label>Дата выезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
-                  <label>Взрослые: <input type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
-                  <label>Дети: <input type="number" name="quantity" value="0" min="1" max="10" step="1"></label>
-                  <button type="submit">Найти</button>
-               </form>
-            </div>
-            </div>
+                    <label>Дата заезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
+                    <label>Дата выезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
+                    <label>Взрослые: <input type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
+                    <label>Дети: <input type="number" name="quantity" value="0" min="1" max="10" step="1"></label>
+                    <button type="submit">Найти</button>
+                  </form>
+                </div>
+              </div>
             </div>
                 </main>
             <footer>
