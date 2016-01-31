@@ -27,25 +27,17 @@ h3 {
 }
 
 .index-logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 73px;
-	padding-bottom: 77px;
-	background-image: url("../img/sedona_1200.jpg");
-	background-repeat: 1200px 562px;
+	/* Тут указываем только отступы */
 }
 
 .container {
 	width: 1200px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 }
 
 .main-header {
 	width:1200px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 }
 
 .main-navigation {
@@ -191,8 +183,7 @@ input {
 
 footer {
 	width: 1200px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 }
 
 .footer-visitsedona {
@@ -212,4 +203,9 @@ footer {
 	float:right;
 	width: 241px;
 	margin-right: 73px;
+}
+.header_info_1{
+	width: 1200px;
+	background-image: url("../img/sedona_1200.jpg");
+	text-align: center;
 }
