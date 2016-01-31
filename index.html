@@ -26,7 +26,7 @@
         </nav>
      </header>
      <main class="container">
-        <img class="index-logo" src="img/sedona_1200.jpg" width="1200" height="773" alt="Седона">
+        <img class="index-logo" src="img/welcome_1200.png" width="458" height="352" alt="Добро пожаловать">
       <h1>Седона — небольшой городок в Аризоне,<br>заслужавающий большего!</h1>
       <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
     <div class="features">
@@ -35,8 +35,8 @@
         <span>—№1—</span>
         <p>Cедона — не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <div class="features-image">
-        <img src="img/city_1200.jpg" width="800" height="401" alt="Город">
+      <div class="features-image image-1">
+        <img src="img/city_1200.jpg" width="800" height="256" alt="Город">
       </div>
     </div>
     <div class="service">
@@ -45,8 +45,8 @@
       <div class="service-item souvenirs"><img class="service-souvenirs" src="img/icon_souvenir_1200.png" width="64" height="76" alt="Сувениры"><h3>Сувениры</h3><br>Не только китайского, но и местного производства!</div>
     </div>
     <div class="features">
-            <div class="features-image">
-        <img src="img/mountains_1200.jpg" width="800" height="400" alt="Каньон">
+            <div class="features-image image-2">
+        <img src="img/mountains_1200.jpg" width="800" height="256" alt="Каньон">
             </div>
             <div class="features-item item-2">
                 <h3>Там есть мост дьявола</h3>
@@ -69,19 +69,20 @@
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
             </div>
+            <!--добавила див!-->
+            <div class="location-title">
                  <h2>Заинтересовались?</h2>
-                 <p>Укажите предполагаемые даты поездки, и мы покажем вас лучшие предложение гостиниц в Седоне</p>
-            <div class="location">
-            <div class="map">
-                 <img src="img/map_1200.jpg" width="1280" height="747" alt="Карта">
+                 <p>Укажите предполагаемые даты поездки,<br> и мы покажем вас лучшие предложение гостиниц в Седоне</p>
             </div>
+            <div class="location">         
+            <img class="map" src="img/map_1200.jpg" width="1200" height="747" alt="Карта">              
             <div class="search">
                  <h3>Поиск гостиницы в Седоне</h3>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label>Дата заезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
-                  <label>Дата выезда: <input type="date" name="calendar" value="" max="2016-01-01" min="2020-01-01"></label><br>
+                  <label>Дата заезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
+                  <label>Дата выезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
                   <label>Взрослые: <input type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
-                  <label>Дети: <input type="number" name="quantity" value="0" min="1" max="10" step="1"></label>
+                  <label>Дети: <input type="number" name="quantity" value="0" min="0" max="10" step="1"></label>
                   <button type="submit">Найти</button>
                </form>
             </div>

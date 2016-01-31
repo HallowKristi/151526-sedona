@@ -1,18 +1,215 @@
 body {
-	font-family: "PTSans", sans-serif;
-	font-style: normal;
+	font-family:"PTSans", sans-serif;
+	font-style:normal;
 	font-size:14px;
 	line-height:26px;
 	text-transform:uppercase;
-	color: #000000; 
+	color:#000000; 
 }
 
 h1 {
-	font-weight: bold;
+	font-weight:bold;
 	font-size:21px;
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom: 42px;
+}
+
+h2 {
+	text-align:center;
+	padding-bottom: 50px;
+	font-weight: normal;
 }
 
 h3 {
-	font-weight: bold;
+	font-weight:bold;
 	font-size:21px;
+}
+
+.index-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 73px;
+	padding-bottom: 77px;
+	background-image: url("../img/sedona_1200.jpg");
+	background-repeat: 1200px 562px;
+}
+
+.container {
+	width: 1200px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.main-header {
+	width:1200px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.main-navigation {
+	width:1056px;
+	list-style:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align:top;
+	margin-right:100px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+.main-navigation img {
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:0;
+}
+
+.features-item {
+	width:400px;
+	min-height:175px;
+	padding-top: 40px;
+	padding-bottom: 41px;
+	text-align:center;
+}
+
+.item-1 {
+	background-color:#81b3d2;
+	color: white;
+	float:left;
+}
+
+.item-2 {
+	background-color:#81b3d2;
+	color: white;
+	float:right;
+}
+
+.item-3 {
+	background-image: url ("../img/bg_feautures.jpg");
+	float:left;
+}
+
+.item-4 {
+	float:left;
+}
+
+.item-5 {
+	float:right;
+}
+
+.features-image {
+	width:800px;
+	height:256px;
+}
+
+.image-1 {
+	float:right;
+}
+
+.image-2 {
+	float:left;
+}
+
+
+.service-item {
+	width: 400px;
+	min-height: 210px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.house {
+	float: left;
+}
+
+.food {
+	float: left;
+}
+
+.souvenirs {
+	float: right;
+}
+
+.location-title {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.location-title h2 {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.search {
+	text-align: center;
+	min-height: 480px;
+	width: 572px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search h3 {
+	background: #766357;
+	min-height: 26px;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.search button {
+	background: #81b3d2;
+	width: 458px;
+	min-height: 58px;
+	margin-bottom: 55px;
+	margin-top: 54px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform:uppercase;
+	color: white;
+}
+
+label {
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 50px;
+	padding-left: 56px;
+}
+
+input {
+	background: #f2f2f2;
+	width: 346px;
+	min-height: 38px;
+}
+
+footer {
+	width: 1200px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.footer-visitsedona {
+	float:left;
+	width: 240px;
+	margin-right: 88px;
+	margin-left: 73px;
+}
+
+.footer-social {
+	float:left;
+	width: 397px;
+	margin-right: 88px;
+}
+
+.footer-copyright {
+	float:right;
+	width: 241px;
+	margin-right: 73px;
 }
