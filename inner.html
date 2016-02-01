@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Седона</title>
 		<link rel="stylesheet" type="text/css" href="css/inner_style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -46,16 +47,16 @@
 					</ul>
 				</form>
 				<div class="range-filter">
+				<p>Стоимость в сутки (р):</p>
+				<div class="price-controls">            
+                <span>от</span><input class="min-price" type="text" value="0">
+                <span>до</span><input class="max-price" type="text" value="3000">
+            </div> 
             <div class="range-controls">
                 <div class="scale"></div>
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-            <p>Стоимость в сутки (р):</p>
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="3000">
-            </div>        
+            </div>                 
 				<form action="example.htm">
 				<button type="submit">Показать</button>
 		</form>
@@ -64,8 +65,8 @@
 		<div class="sorting">
 		<h3>Найдено: 3</h3>
 		<div>
-			Сортировка:
 			<ul>
+			Сортировка:
 				<li><a href="#">по цене</a></li>
 				<li><a href="#">по типу</a></li>
 				<li><a href="#">по рейтингу</a></li>
@@ -116,9 +117,8 @@
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
               </section>
-              <section class="footer-copyright">
-                <p>WEBSITE BY</p>
-                <a href="#"><img src="img/htmlacademy_1200.png" width="113" height="39" alt="HTML Academy"></a>
+              <section class="footer-copyright">                
+                <p>WEBSITE BY</p><a href="#"><img src="img/htmlacademy_1200.png" width="113" height="39" alt="HTML Academy"></a>
               </section>
             </footer>
 	</body>
