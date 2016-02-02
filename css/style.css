@@ -7,17 +7,14 @@ body {
 	color:#000000; 
 }
 
-h1 {
+.header-info-1 h1 {
 	font-weight:bold;
 	font-size:21px;
 	text-align:center;
-	padding-top: 50px;
-	padding-bottom: 42px;
 }
 
-h2 {
+.header-info-1 h2 {
 	text-align:center;
-	padding-bottom: 50px;
 	font-weight: normal;
 }
 
@@ -28,52 +25,50 @@ h3 {
 
 .index-logo {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 73px;
-	padding-bottom: 77px;
+	margin: 0 auto;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	background-image: url("../img/sedona_1200.jpg");
 	background-repeat: 1200px 562px;
 }
 
 .container {
 	width: 1200px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
+	box-sizing:border-box;
 }
 
 .main-header {
 	width:1200px;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.main-navigation {
-	width:1056px;
-	list-style:none;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.main-navigation li {
-	display: inline-block;
-	vertical-align:top;
-	margin-right:100px;
-	text-align:center;
+	margin: 0 400px;
 	box-sizing:border-box;
 }
 
-.main-navigation img {
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:0;
+.main-navigation {
+	list-style:none;
+	margin: 0 auto;
+	box-sizing:border-box;
+}
+
+.header-info-1{
+ 	width: 1200px;
+ 	background-image: url("../img/sedona_1200.jpg");
+ 	text-align: center;
+ 	margin: -20px auto 0px;
+ }
+
+.main-navigation li {
+	display: inline-block;
+	margin-right:115px;
+	vertical-align: middle;
+	text-align:center;
 }
 
 .features-item {
 	width:400px;
-	min-height:175px;
-	padding-top: 40px;
-	padding-bottom: 41px;
+	min-height:150px;
+	padding-top: 50px;
+	padding-bottom: 55px;
 	text-align:center;
 }
 
@@ -90,15 +85,17 @@ h3 {
 }
 
 .item-3 {
-	background-image: url ("../img/bg_feautures.jpg");
+	background-color:#eeeeee;
 	float:left;
 }
 
 .item-4 {
+	background-color:#eeeeee;
 	float:left;
 }
 
 .item-5 {
+	background-color:#eeeeee;
 	float:right;
 }
 
@@ -114,7 +111,6 @@ h3 {
 .image-2 {
 	float:left;
 }
-
 
 .service-item {
 	width: 400px;
@@ -145,6 +141,7 @@ h3 {
 .location-title h2 {
 	font-weight: bold;
 	padding-bottom: 20px;
+	clear: both;
 }
 
 .search {
@@ -153,14 +150,17 @@ h3 {
 	width: 572px;
 	margin-left: auto;
 	margin-right: auto;
+	position: absolute;
+	left:600px;
+	bottom:-1400px;
+	background-color: white;
 }
 
 .search h3 {
 	background: #766357;
 	min-height: 26px;
+	padding: 15px;
 	color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
 .search button {
@@ -191,8 +191,7 @@ input {
 
 footer {
 	width: 1200px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 }
 
 .footer-visitsedona {
@@ -212,4 +211,11 @@ footer {
 	float:right;
 	width: 241px;
 	margin-right: 73px;
+}
+
+.footer-copyright img {
+	display: block;
+	margin-top: -30px;
+	margin-left: 105px;
+	margin-bottom: 35px;
 }
