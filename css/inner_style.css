@@ -6,20 +6,12 @@ body {
 	color: #000000;
 }
 
-h3 {
-	font-weight: bold;
-	text-transform:uppercase;
-}
-.results h3 {
-	font-weight: bold;
-	font-size:21px;
-	text-transform:uppercase;
-}
-
 .main-header {
 	width: 1056px;
 	margin: 0 auto;
 	text-transform:uppercase;
+	font-size:14px;
+	line-height:26px;
 }
 
 .container {
@@ -40,6 +32,8 @@ h3 {
 }
 
 .filter {
+	font-size:16px;
+	line-height:21px;
 	width: 1056px;
 	background-image: url("../img/backround_inner_1200.jpg");
 	background-size: contain;
@@ -69,63 +63,63 @@ h3 {
 .scale{
 margin-top:15px;
 height:2px;
-background:red;
+background:#ffffff;
 }
 
 .min-toggle, .max-toggle{
-position:absolute;
-top:190px;
-left:810px;
+margin-top: -13px;
 width:4px;
 height:4px;
-border:10px solid red;
+border:10px solid #ffffff;
 cursor:pointer;
 border-radius:50%;
 }
 
 .min-toggle{
-left:1076px;
+float: left;
 background: #ababab;
 }
 
 .max-toggle{
-left:1300px;
+float: right;
 background: #1c4f80;
 }
 
 .range-filter p {
 	margin-bottom: 10px;
-	color: red;
+	color: #ffffff;
 }
 
 .range-filter button {
 	margin-top: 30px;
-	border: 2px solid red;
+	border: 2px solid #ffffff;
 	background-color: transparent;
-	color: red;
+	color: #ffffff;
 	width: 133px;
 	height: 32px;
 	margin-left: 90px;
 }
 
 .price-controls {
-	border: 2px solid red;
+	border: 2px solid #ffffff;
 	text-align: center;
 }
 
 .price-controls span {
-	color: red;
+	color: #ffffff;
 }
 
 .price-controls input {
 	border: none;
-	color: red;
+	color: #ffffff;
 }
 
 .sorting {
 	clear: both;
 	padding-top:55px;
 	padding-bottom: 60px;
+	font-size:12px;
+	line-height:18px
 }
 
 .sorting li {
@@ -133,6 +127,8 @@ background: #1c4f80;
 	margin-left: 15px;
 	margin-right: 10px;
 	color:#b1b1b1;
+	font-size:12px;
+	line-height:18px
 }
 
 .sorting li:first-child {
@@ -142,6 +138,10 @@ background: #1c4f80;
 .sorting h3 {
 	display: inline-block;
 	margin-right: 45px;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size:21px;
+	line-height:26px
 }
 
 .sorting div {
@@ -182,6 +182,9 @@ background: #1c4f80;
 	margin-top: 16px;
 	height: 27px;
 	color:white;
+	text-transform:uppercase;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .more {
@@ -193,10 +196,14 @@ background: #1c4f80;
 .reservation {
 	background-color:#766357;
 	width: 142px;
-	border: none; 
+	border: none;
 }
 
 .results h3 {
+	font-weight: bold;
+	font-size:21px;
+	line-height:26px;
+	text-transform:uppercase;
 	margin-bottom: 12px;
 }
 
