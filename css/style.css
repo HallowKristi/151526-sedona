@@ -1,5 +1,5 @@
 body {
-  font-family:"PTSans", sans-serif;
+  font-family:"PTSans", "Arial", sans-serif;
   font-style:normal;
   font-size:14px;
   line-height:26px;
@@ -24,14 +24,14 @@ h2 {
 h3 {
   font-weight:bold;
   font-size:21px;
+  margin-bottom: 20px;
 }
 
-.index-logo {
+.header-info-1 .index-logo {
   display: block;
   margin: 0 auto;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  /*background-image: url("../img/sedona_1200.jpg");*/
+  padding-top: 50px;
+  padding-bottom: 80px;
   background-repeat: 1200px 562px;
 }
 
@@ -62,9 +62,15 @@ h3 {
 
 .main-navigation li {
   display: inline-block;
-  margin-right:115px;
+  margin-right:125px;
   vertical-align: middle;
   text-align:center;
+}
+
+.main-navigation a {
+  color:#000000;
+  text-decoration: none;
+  font-weight:bold;
 }
 
 .features{
@@ -73,11 +79,16 @@ h3 {
 
 .features-item {
     width: 400px;
-    min-height: 150px;
+    min-height: 256px;
     padding-top: 50px;
     text-align: center;
-    height: 256px;
     box-sizing: border-box;
+}
+
+.features-item p {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .item-1 {
@@ -119,6 +130,7 @@ h3 {
 
 .image-2 {
   float:left;
+  background-image: url("../img/mountains_1200.jpg");
 }
 
 .service-item {
@@ -127,6 +139,9 @@ h3 {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing:border-box;
 }
 
 .house {
@@ -154,14 +169,18 @@ h3 {
   clear: both;
 }
 
-.search {
+.location .map {
+  position: relative;
+}
+
+.location .search {
   text-align: center;
   min-height: 480px;
   width: 572px;
   margin:0 auto;
   position: absolute;
   left:650px;
-  bottom:-1482px;
+  bottom:-1610px;
   background-color: white;
 }
 
@@ -213,6 +232,9 @@ footer {
   width: 240px;
   margin-right: 88px;
   margin-left: 73px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .footer-social {
@@ -232,4 +254,9 @@ footer {
   margin-top: -30px;
   margin-left: 105px;
   margin-bottom: 35px;
+}
+
+footer a {
+  color:#000000;
+  text-decoration: none;
 }

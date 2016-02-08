@@ -31,33 +31,59 @@ body {
 	margin-right: 88px;
 }
 
+.main-navigation a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 .filter {
 	font-size:16px;
 	line-height:21px;
 	width: 1056px;
+	min-height: 217;
 	background-image: url("../img/backround_inner_1200.jpg");
 	background-size: contain;
 	margin: 0 auto;
-	margin-top: 50px;
 	text-transform:uppercase;
+	box-sizing:border-box;
+}
+
+.filter li {
+	color: #ffffff;
+	list-style: none;
+	padding-bottom: 25px;
+}
+
+.filter span {
+	margin-left: 40px;
+	color: #ffffff;
+	font-weight: bold;
 }
 
 .infrastructure {
 	display: block;
 	float:left;
+	margin-left: 70px;
+	margin-top: 25px;
 }
 
 .housing {
 	display: block;
 	float:left;
-	margin-left: 80px;
+	margin-left: 70px;
+	margin-top: 25px;
 }
 
 .range-filter {
 	display: block;
 	float:right;
-	margin-right: 95px;
+	margin-right: 80px;
 	width: 307px;
+}
+
+.range-filter p {
+	font-weight: bold;
 }
 
 .scale{
@@ -235,6 +261,9 @@ footer {
 	float:left;
 	width: 241px;
 	margin-right: 88px;
+	font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
 }
 
 .footer-social {
@@ -254,4 +283,9 @@ footer {
 	margin-top: -30px;
 	margin-left: 105px;
 	margin-bottom: 35px;
+}
+
+footer a {
+  color:#000000;
+  text-decoration: none;
 }
