@@ -32,6 +32,11 @@ body {
 .main-navigation li {
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 120px;
+}
+
+.main-navigation li:last-child {
+	 margin-right: 0px;
 }
 
 .main-navigation a {
@@ -40,16 +45,13 @@ body {
 	font-weight: bold;
 }
 
-.main-navigation .info {
-	margin-top: 10px;
-	margin-right: 120px;
-	margin-top: 20px;
+.main-navigation a:hover {
+	color:#81b3d2;
 }
 
-.main-navigation .info:last-child {
-	 margin-right: 0px;
+.main-navigation a:active {
+color:#d6d0cc;
 }
-
 
 .filter {
 	font-size:16px;
@@ -119,16 +121,23 @@ body {
     border:10px solid #ffffff;
     border-radius: 50%;
     cursor:pointer;
+    background: #ababab;
     }
 
 .min-toggle{
     left:1146px;
-    background: #ababab;
 }
 
 .max-toggle{
     left:1400px;
-    background: #1c4f80;
+}
+
+.max-toggle:hover {
+	background: #1c4f80;
+}
+
+.min-toggle:hover {
+	background: #1c4f80;
 }
 
 .range-filter button {
@@ -145,6 +154,7 @@ body {
 	width: 320px;
 	height: 35px;
 	border: 2px solid #ffffff;
+	position: relative;
 }
 
 .price-controls span {
@@ -172,12 +182,16 @@ body {
     color: #ffffff;
     border-left: 2px solid white;
     height: 20px;
+    position: absolute;
+    right: 160px;
 }
 
 .sorting {
 	clear: both;
 	padding-top:55px;
 	padding-bottom: 60px;
+	padding-left: 73px;
+	padding-right: 73px;
 	font-size:12px;
 	line-height:18px;
 	font-weight: bold;
@@ -197,8 +211,13 @@ body {
 	border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting a .active {              
-    color:#b3d1e4;
+.sorting a:hover {              
+    color:#81b3d2;
+}
+
+.sorting a:active {              
+    color:#81b3d2;
+    text-decoration: none;
 }
 
 .sorting h3 {
@@ -215,39 +234,149 @@ body {
 	margin-right: 15px;
 }
 
+.results {
+	padding-left: 73px;
+	padding-right: 73px;
+	list-style: none;
+}
 
+.results-logo {
+	float:left;
+	margin-right: 30px;
+}
+
+.results > li{
+	margin-bottom: 61px;
+}
+
+.results-info {
+}
+
+.results h3 {
+	font-weight: bold;
+	font-size:21px;
+	line-height:26px;
+	text-transform:uppercase;
+	margin-bottom: 12px;
+}
+
+.results span {
+	font-size:14px;
+	line-height:21px;
+	font-weight: bold;
+}
+
+.results a {
+	margin-top: 16px;
+	min-height: 27px;
+	color:white;
+	text-transform:uppercase;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+li .more {
+	background-color:#81b3d2;
+	width: 110px;
+	border: none;
+	padding: 5px 15px;
+	font-weight: bold;
+}
+
+li .reservation {
+	background-color:#766357;
+	width: 142px;
+	border: none;
+	padding: 5px 15px;
+	font-weight: bold;
+}
+
+.decor {
+	float: right;
+	margin-top: -150px;
+}
+
+.rating {
+	width: 110px;
+	height:27px;
+	background-color: #f2f2f2;
+	color: #8b8b8b;
+	text-align: center;
+	padding: 3px;
+	box-sizing:border-box;
+	font-size:14px;
+	line-height:21px;
+	margin-top: 33px;
+}
+
+.stars {
+	list-style: none;
+}
+
+.stars li {
+	display: inline-block;
+	margin-right: -6px;
+}
 
 footer {
 	width: 1200px;
 	margin: 0 auto;
+	padding: 50px 73px;
 }
 
 .footer-visitsedona {
 	float:left;
-	width: 241px;
-	margin-right: 88px;
 	font-weight: bold;
     font-size: 21px;
-    line-height: 26px;
+    margin-top: 13px;
 }
 
 .footer-social {
-	float:left;
-	width: 401px;
+	width: 400px;
 	margin-right: 88px;
+	font-size: 0;
+	margin: 0 auto;
+}
+
+.social-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #81b3d2;
+	margin-right: 7px;
+}
+
+.social-btn-vk {
+	background-image: url("../img/tw.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.social-btn-fb {
+	background-image: url("../img/f.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.social-btn-inst {
+	background-image: url("../img/you.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .footer-copyright {
 	float:right;
-	width: 241px;
-	margin-right: 73px;
+	margin-top: -53px;
+}
+
+.footer-copyright p {
+	
 }
 
 .footer-copyright img {
 	display: block;
-	margin-top: -30px;
+	margin-top: -40px;
 	margin-left: 105px;
-	margin-bottom: 35px;
 }
 
 footer a {
@@ -258,4 +387,10 @@ footer a {
 ul {
 	margin: 0;
 	padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
