@@ -1,21 +1,508 @@
 body {
-  font-family:"PTSans", "Arial", sans-serif;
-  font-style:normal;
-  font-size:14px;
-  line-height:26px;
-  text-transform:uppercase;
-  color:#000000; 
+	font-family: "PTSans", sans-serif;
+	font-style: normal;
+	font-size:14px;
+	line-height:26px;
+	color: #000000;
 }
 
-h1 {
+.main-header {
+	width: 1200px;
+	margin: 0 auto;
+	text-transform:uppercase;
+	font-size:14px;
+	line-height:26px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	text-transform:uppercase;
+}
+
+.main-navigation {
+	padding: 0px;
+	list-style: none;
+	text-transform:uppercase;
+	margin: 0px;
+	padding-left: 73px;
+	padding-right: 73px;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 120px;
+}
+
+.main-navigation li:last-child {
+	 margin-right: 0px;
+}
+
+.main-navigation a.info{
+	padding-top: 20px;
+	display: block;
+}
+
+.main-navigation a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.main-navigation a:hover {
+	color:#81b3d2;
+}
+
+.main-navigation a:active {
+color:#d6d0cc;
+}
+
+.filter {
+	font-size:16px;
+	line-height:21px;
+	background-image: url("../img/backround_inner_1200.jpg");
+	background-size: cover;
+	margin: 0 auto;
+	text-transform:uppercase;
+	box-sizing:border-box;
+	margin-top: -20px;
+	padding:30px 73px;
+	min-height: 220px;
+}
+
+.filter li {
+	color: #ffffff;
+	list-style: none;
+	margin-top: 20px;
+}
+
+.filter span {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.infrastructure {
+	display: block;
+	float:left;
+	width: 241px;
+	min-height: 160px;
+}
+
+.housing {
+	display: block;
+	float:left;
+	width: 288px;
+	margin-right: 197px;
+	min-height: 160px;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox {
+  position:relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.checkbox input[type="checkbox"] + .checkbox-indicator  {
+  position: absolute;
+  top:-3px;
+  left:0px;
+  width: 17px;
+  height: 17px;
+  border:2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+   content: '';
+   position: absolute; 
+   left: 1px;  
+   top:9px; 
+   width: 10px;
+   height: 3px;
+   background: #ffffff;
+   transform: rotate(50deg);    
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: '';
+  position: absolute; 
+  left: 4px;
+  top:5px;
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  transform: rotate(-50deg)
+}
+
+.checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+
+.range-controls {
+	position: relative;
+}
+
+.range-filter {
+	display: block;
+	float:right;
+	width: 328px;
+	min-height: 160px;
+}
+
+.range-filter p {
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.range-controls .scale {
+    margin-top: 15px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.min-toggle, .max-toggle{
+	position: absolute;
+    margin-top: -13px;
+    width:4px;
+    height:4px;
+    border:10px solid #ffffff;
+    border-radius: 50%;
+    cursor:pointer;
+    background: #ababab;
+    }
+
+.min-toggle{
+    left:0px;
+}
+
+.max-toggle{
+    left:240px;
+}
+
+.max-toggle:hover {
+	background: #1c4f80;
+}
+
+.min-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-filter button {
+	margin-top: 30px;
+	border: 2px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+	width: 133px;
+	height: 32px;
+	margin-left: 90px;
+}
+
+.price-controls {
+	width: 320px;
+	height: 35px;
+	border: 2px solid #ffffff;
+	position: relative;
+}
+
+.price-controls span {
+	color: #ffffff;
+	padding-top: 7px;
+	box-sizing:border-box;
+}
+
+.min-price {
+	display: block;
+	float:left;
+	width: 159px;
+	text-align: center;
+}
+
+.max-price {
+	display: block;
+	float: right;
+	width: 159px;
+	text-align: center;
+}
+
+.min-price::after {
+	content: "";
+    color: #ffffff;
+    border-left: 2px solid white;
+    height: 20px;
+    position: absolute;
+    right: 160px;
+}
+
+.sorting {
+	position: relative;
+	clear: both;
+	padding-top:55px;
+	padding-bottom: 60px;
+	padding-left: 73px;
+	padding-right: 73px;
+	font-size:12px;
+	line-height:18px;
+	font-weight: bold;
+}
+
+.sorting li {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-size:12px;
+	line-height:18px;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting a {
+	text-decoration:none;
+	color:#b1b1b1;
+}
+
+.sorting a:hover {              
+    color:#81b3d2;
+}
+
+.sorting a:active {              
+    color:#000000;
+    text-decoration: none;
+}
+
+.sorting .active {
+	color:#81b3d2;
+	text-decoration: none;
+}
+
+.sorting h3 {
+	display: inline-block;
+	margin-right: 45px;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size:21px;
+	line-height:26px
+}
+
+.sorting div {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+
+.triangle {
+	position: absolute;
+	right: 10px;
+	top:86px;
+	width: 73px;
+	height: 40px;
+}
+
+.triangle-top {
+	text-decoration:none;
+	display: inline-block;
+	width: 11px;
+	height: 10px;
+	background-image: url("../img/top_grey.jpg");
+	background-repeat: no-repeat;
+}
+
+.triangle-top:hover {
+    background-image: url("../img/top_black.jpg");
+}
+
+.triangle-top:active {
+    background-image: url("../img/top_blue.jpg");
+}
+
+
+.triangle-bottom {
+	text-decoration:none;
+	display: inline-block;
+	width: 11px;
+	height: 10px;
+	background-image: url("../img/bottom_grey.jpg");
+	background-repeat: no-repeat;
+}
+
+.triangle .active {
+	background-image: url("../img/bottom_blue.jpg");
+}
+
+.triangle-bottom:hover {
+	background-image: url("../img/bottom_black.jpg");
+}
+
+.triangle-bottom:active {
+	background-image: url("../img/bottom_blue.jpg");
+}
+
+.results {
+	padding-left: 73px;
+	padding-right: 73px;
+	list-style: none;
+}
+
+.results-logo {
+	float:left;
+	margin-right: 30px;
+}
+
+.results > li{
+	margin-bottom: 61px;
+}
+
+.results h3 {
+	font-weight: bold;
+	font-size:21px;
+	line-height:26px;
+	text-transform:uppercase;
+	margin-bottom: 12px;
+	cursor:pointer;
+}
+
+.results h3:hover {
+	color: #81b3d2;
+}
+
+.results h3:active {
+	color: #c7c7c7;
+}
+
+.results span {
+	font-size:14px;
+	line-height:21px;
+	font-weight: bold;
+}
+
+.results a {
+	margin-top: 16px;
+	min-height: 27px;
+	color:white;
+	text-transform:uppercase;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+li .more {
+	background-color:#81b3d2;
+	width: 110px;
+	border: none;
+	padding: 5px 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li .more:hover {
+	background-color: #669ec0;
+}
+
+li .more:active {
+	background-color: #5496bd;
+	color:#88b6d1;
+}
+
+li .reservation {
+	background-color:#766357;
+	width: 142px;
+	border: none;
+	padding: 5px 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li .reservation:active {
+	background-color:#503e33;
+	color:#857871;
+}
+
+li .reservation:hover {
+	background-color:#604e43;
+}
+
+.decor {
+	float: right;
+	margin-top: -85px;
+}
+
+.rating {
+	width: 110px;
+	height:27px;
+	background-color: #f2f2f2;
+	color: #8b8b8b;
+	text-align: center;
+	padding: 3px;
+	box-sizing:border-box;
+	font-size:14px;
+	line-height:21px;
+	margin-top: 63px;
+}
+
+.stars {
+	list-style: none;
+	float: right;
+}
+
+.stars li {
+	display: inline-block;
+	margin-right: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.header-info-1 .index-logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-repeat: 1200px 562px;
+}
+
+.header-info-1{
+  width: 1200px;
+  background-image: url("../img/sedona_1200.jpg");
+  text-align: center;
+  margin: -20px auto 20px;
+ }
+
+h1.index{
   font-weight:bold;
   font-size:21px;
+  line-height: 26px;
   text-align:center;
   margin-top: 60px;
   margin-bottom: 35px;
 }
 
-h2 {
+h2.index{
+  font-size: 14px;
+  line-height: 26px;
   text-align:center;
   font-weight: normal;
   margin-top: 28px;
@@ -28,74 +515,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.header-info-1 .index-logo {
-  display: block;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  background-repeat: 1200px 562px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  text-transform:uppercase;
-}
-
-.main-header {
-  width: 1200px;
-  margin: 0 auto;
-  text-transform:uppercase;
-  font-size:14px;
-  line-height:26px;
-}
-
-.main-navigation {
-  padding: 0px;
-  list-style: none;
-  text-transform:uppercase;
-  margin: 0px;
-  padding-left: 73px;
-  padding-right: 73px;
-}
-
-.header-info-1{
-  width: 1200px;
-  background-image: url("../img/sedona_1200.jpg");
-  text-align: center;
-  margin: -20px auto 20px;
- }
-
-.main-navigation li {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 120px;
-}
-
-.main-navigation li:last-child {
-   margin-right: 0px;
-}
-
-.main-navigation a.info{
-  padding-top: 20px;
-  display: block;
-}
-
-.main-navigation a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.main-navigation a:hover {
-  color:#81b3d2;
-}
-
-.main-navigation a:active {
-color:#d6d0cc;
-}
-
-.triangle {
+.triangle-index {
   display: block;
   width: 1200px;
   height: 57px;
@@ -104,15 +524,11 @@ color:#d6d0cc;
   margin-top: -77px;
 }
 
-.features{
-  height: 256px
-}
-
 .features-item {
     width: 400px;
     min-height: 256px;
-    padding-top: 50px;
     text-align: center;
+    padding-top: 20px;
     box-sizing: border-box;
 }
 
@@ -187,6 +603,10 @@ color:#d6d0cc;
   float: right;
 }
 
+.location {
+  position: relative;
+}
+
 .location-title {
   text-align: center;
   margin-bottom: 135px;
@@ -201,13 +621,13 @@ color:#d6d0cc;
 }
 
 .location .search {
-  text-align: center;
-  min-height: 480px;
-  width: 572px;
-  margin:0 auto;
   position: absolute;
-  left:650px;
-  bottom:-1590px;
+  left: 50%;
+  margin-left: -286px;
+  top:-100px;
+  text-align: center;
+  height: 480px;
+  width: 572px;
   background-color: white;
 }
 
@@ -244,19 +664,77 @@ color:#d6d0cc;
   color: #88b6d1;
 }
 
-label {
+.search-form label {
   font-weight: bold;
   text-align: left;
   margin-bottom: 50px;
   padding-left: 56px;
   border: none;
+  margin-right: 50px;
 }
 
-input {
+.search-form input {
+  position: relative;
   background: #f2f2f2;
-  width: 346px;
-  min-height: 38px;
+  width: 306px;
+  min-height: 16px;
+  margin: 0px;
+  padding: 10px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border:none;
+  outline: none;
 }
+
+.search-form input::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/calendar_grey.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+.search-form input::after:hover {
+  background-image: url("../img/calendar_black.png");
+}
+
+.search-form input::after:active {
+  background-image: url("../img/calendar_blue.png");
+}
+
+/*input .child {
+  width: 114px; 
+  position: relative;
+}
+
+input .adult {
+  width: 114px; 
+}
+
+.search-form input::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.search-form input::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+*/
 
 input:hover {
   background: #ebebeb;
@@ -267,16 +745,47 @@ input:active {
   border:2px solid #e5e5e5;
 }
 
+input .adult {
+  width: 115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 50px 73px;
-  box-sizing:border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 50px 73px;
+	box-sizing:border-box;
 }
 
 .footer-visitsedona {
-  float:left;
-  font-weight: bold;
+	float:left;
+	font-weight: bold;
     font-size: 21px;
     margin-top: 13px;
     margin-left: 60px;
@@ -284,73 +793,78 @@ footer {
 }
 
 .footer-social {
-  width: 400px;
-  margin-right: 88px;
-  font-size: 0;
-  margin: 0 auto;
+	width: 400px;
+	margin-right: 88px;
+	font-size: 0;
+	margin: 0 auto;
 }
 
 .social-btn {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: #81b3d2;
-  margin-right: 7px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #81b3d2;
+	margin-right: 7px;
 }
 
 .social-btn:hover {
-  background-color: #669ec0;
+	background-color: #669ec0;
 }
 
 .social-btn:active {
-  background-color: #5496bd;
+	background-color: #5496bd;
 }
 
 .social-btn-vk {
-  background-image: url("../img/tw.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
+	background-image: url("../img/tw.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .social-btn-fb {
-  background-image: url("../img/f.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
+	background-image: url("../img/f.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .social-btn-inst {
-  background-image: url("../img/you.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
+	background-image: url("../img/you.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .footer-copyright {
-  float:right;
-  margin-top: -39px;
-  margin-right: 30px;
+	float:right;
+	margin-top: -53px;
+	margin-right: 30px;
 }
 
 .footer-copyright .htmlacademy{
-  display: block;
-  width: 113px;
-  height: 39px;
-  margin-top: -31px;
-  margin-left: 105px;
-  background-image: url("../img/htmlacademy_1200.png");
-  background-repeat: no-repeat;
+	display: block;
+	width: 113px;
+	height: 39px;
+	margin-top: -45px;
+	margin-left: 105px;
+	background-image: url("../img/htmlacademy_1200.png");
+	background-repeat: no-repeat;
 }
 
 .footer-copyright .htmlacademy:hover {
-  background-image: url("../img/html_blue.png");
+	background-image: url("../img/html_blue.png");
 }
 
 .footer-copyright .htmlacademy:active {
-  background-image: url("../img/html_grey.png");
+	background-image: url("../img/html_grey.png");
 }
 
 footer a {
   color:#000000;
   text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 .clearfix::after {

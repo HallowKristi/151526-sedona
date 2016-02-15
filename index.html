@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css"> 
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">   
   </head>
@@ -17,7 +17,7 @@
              <li>
                 <a class="info" href="#">Фото и видео</a>
              </li>
-             <li><a href="#"><img src="img/logo_1200.gif" width="138" height="70" alt="Логотип"></a></li>
+             <li><a href="#"><img src="img/logo_1200.png" width="138" height="70" alt="Логотип"></a></li>
              <li>
                 <a class="info" href="#">Карта штата</a>
              </li>
@@ -31,9 +31,9 @@
      <div class="header-info-1">
         <img class="index-logo" src="img/welcome_1200.png" width="458" height="352" alt="Добро пожаловать">
        </div>
-      <div class="triangle"></div>
-       <h1>Седона — небольшой городок в Аризоне,<br>заслужавающий большего!</h1>
-      <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+      <div class="triangle-index"></div>
+       <h1 class="index">Седона — небольшой городок в Аризоне,<br>заслужавающий большего!</h1>
+      <h2 class="index">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
     <div class="features clearfix">
       <div class="features-item item-1">
         <h3>Настоящий<br>городок</h3>
@@ -71,7 +71,7 @@
             </div>
             </div>
             <div class="location-title">
-                 <h2>Заинтересовались?</h2>
+                 <h2 class="index">Заинтересовались?</h2>
                  <p>Укажите предполагаемые даты поездки,<br> и мы покажем вас лучшие предложение гостиниц в Седоне</p>
             </div>
             <div class="location">         
@@ -81,8 +81,8 @@
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                   <label>Дата заезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
                   <label>Дата выезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
-                  <label>Взрослые: <input type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
-                  <label>Дети: <input type="number" name="quantity" value="0" min="0" max="10" step="1"></label>
+                  <label>Взрослые: <input class="aduld" type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
+                  <label>Дети: <input class="child type="number" name="quantity" value="0" min="0" max="10" step="1"></label>
                   <button type="submit">Найти</button>
                </form>
             </div>

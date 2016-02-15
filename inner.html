@@ -5,7 +5,7 @@
 		<title>Седона</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/inner_style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -17,7 +17,7 @@
              <li>
                 <a class="info" href="#">Фото и видео</a>
              </li>
-             <li><a href="#"><img src="img/logo_1200.gif" width="138" height="70" alt="Логотип"></a></li>
+             <li><a href="index.html"><img src="img/logo_1200.png" width="138" height="70" alt="Логотип"></a></li>
              <li>
                 <a class="info" href="#">Карта штата</a>
              </li>
@@ -34,17 +34,17 @@
 						Инфраструктура:
 					</span>
 					<ul>
-					<li><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
-					<li><label><input type="checkbox" name="parking">Парковка</label></li>
-					<li><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
+					<li><label class="checkbox"><input type="checkbox" name="pool" checked>Бассейн<span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="parking">Парковка<span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="wi-fi">Wi-Fi<span class="checkbox-indicator"></span></label></li>
 					</ul>
 				</form>
 				<form class="housing" action="index.html" method="post">
 					<span>Тип жилья:</span>
 					<ul>
-					<li><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
-					<li><label><input type="checkbox" name="motel" checked>Мотель</label></li>
-					<li><label><input type="checkbox" name="apartment" checked>Апартаменты</label></li>
+					<li><label class="checkbox"><input type="checkbox" name="hotel" checked>Гостиница<span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="motel" checked>Мотель<span class="checkbox-indicator"></span></label></li>
+					<li><label class="checkbox"><input type="checkbox" name="apartment" checked>Апартаменты<span class="checkbox-indicator"></span></label></li>
 					</ul>
 				</form>
 				<div class="range-filter">
@@ -55,6 +55,7 @@
             </div> 
             <div class="range-controls">
                 <div class="scale"></div>
+                <div class="bar"></div>
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
             </div>                 
@@ -69,16 +70,14 @@
 		<div>
 			<ul>
 			Сортировка:
-				<li><a class="active" href="#">по цене</a></li>
+				<li class="active"><a href="#">по цене</a></li>
 				<li><a href="#">по типу</a></li>
-				<li><a href="#">по рейтингу</a></li>
-				<!--
-				<div class="triangle">
-				<a class="triangle-top" href="#"></a>
-				<a class="triangle-bottom" href="#"></a>
-				</div>
-				-->
-			</ul>
+				<li><a href="#">по рейтингу</a></li>				
+			</ul>      
+        <div class="triangle">
+        <a class="triangle-top" href="#"></a>
+        <a class="triangle-bottom active" href="#"></a>
+        </div>        
 		</div>
 		</div>
 		<ul class="results clearfix">
