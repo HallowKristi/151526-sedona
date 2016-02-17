@@ -54,6 +54,7 @@
                 <span>—№2—</span>
                 <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
            </div>
+           <div class="features-bottom">
             <div class="features-item item-3">
                 <h3>Небольшая<br>площадь</h3>
                 <span>—№3—</span>
@@ -70,6 +71,7 @@
                 <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
             </div>
             </div>
+            </div>
             <div class="location-title">
                  <h2 class="index">Заинтересовались?</h2>
                  <p>Укажите предполагаемые даты поездки,<br> и мы покажем вас лучшие предложение гостиниц в Седоне</p>
@@ -79,17 +81,19 @@
             <div class="search">
                  <h3>Поиск гостиницы в Седоне</h3>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label>Дата заезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
-                  <label>Дата выезда: <input type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></label><br>
-                  <label>Взрослые: <input class="aduld" type="number" name="quantity" value="2" min="1" max="10" step="1"></label>
-                  <label>Дети: <input class="child type="number" name="quantity" value="0" min="0" max="10" step="1"></label>
+                  <div class="input-group">
+                  <label for="arrival">Дата заезда:</label><input id="arrival" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01">
+                  <label for="departure">Дата выезда:</label><input id="departure" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01">
+                  <div class="aduld"><label for="id-adult">Взрослые:</label><input id="id-adult" type="number" name="quantity" value="2" min="1" max="10" step="1"></div>
+                  <div class="child"><label for="id-child">Дети:</label><input id="id-child" type="number" name="quantity" value="0" min="0" max="10" step="1"></div>
                   <button type="submit">Найти</button>
+                  </div>
                </form>
             </div>
             </div>
             </div>
                 </main>
-            <footer class="clearfix">
+            <footer class="index clearfix">
               <section class="footer-visitsedona">
                 <a href="#">#VISITSEDONA</a>
               </section>
