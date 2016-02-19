@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">   
   </head>
   <body>
+  <main class="container">
      <header class="main-header">
      <nav>
           <ul class="main-navigation">
@@ -22,12 +23,11 @@
                 <a class="info" href="#">Карта штата</a>
              </li>
              <li>
-                <a class="info" href="#">Гостиницы</a>
+                <a class="info" href="inner.html">Гостиницы</a>
              </li>
           </ul>
         </nav>
-     </header>
-     <main class="container">
+     </header>     
      <div class="header-info-1">
         <img class="index-logo" src="img/welcome_1200.png" width="458" height="352" alt="Добро пожаловать">
        </div>
@@ -48,13 +48,15 @@
       <div class="service-item souvenirs"><img class="service-souvenirs" src="img/icon_souvenir_1200.png" width="64" height="76" alt="Сувениры"><h3>Сувениры</h3><br><p>Не только китайского, но и местного производства!</p></div>
     </div>
     <div class="features">
+    <div class="clearfix">
             <div class="features-image image-2"></div>
             <div class="features-item item-2">
                 <h3>Там есть<br>мост дьявола</h3>
                 <span>—№2—</span>
                 <p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
            </div>
-           <div class="features-bottom">
+           </div>
+           <div class="features-bottom clearfix">
             <div class="features-item item-3">
                 <h3>Небольшая<br>площадь</h3>
                 <span>—№3—</span>
@@ -80,14 +82,22 @@
             <img class="map" src="img/map_1200.jpg" width="1200" height="747" alt="Карта">              
             <div class="search">
                  <h3>Поиск гостиницы в Седоне</h3>
-                  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">            
                   <div class="input-group">
-                  <label for="arrival">Дата заезда:</label><input id="arrival" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01">
-                  <label for="departure">Дата выезда:</label><input id="departure" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01">
-                  <div class="aduld"><label for="id-adult">Взрослые:</label><input id="id-adult" type="number" name="quantity" value="2" min="1" max="10" step="1"></div>
-                  <div class="child"><label for="id-child">Дети:</label><input id="id-child" type="number" name="quantity" value="0" min="0" max="10" step="1"></div>
-                  <button type="submit">Найти</button>
-                  </div>
+                  <label for="arrival">Дата заезда:</label><input id="arrival" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></div>
+                  <div class="input-group"><label for="departure">Дата выезда:</label><input id="departure" type="date" name="calendar" value="" max="2020-01-01" min="2016-01-01"></div>
+
+                  <div class="input-group">
+                  <label class="adult" for="id-adult">Взрослые:</label>                  
+                  <div class="input-group plus"></div>
+                  <div class="adult"><input id="id-adult" type="number" name="quantity" value="2" min="1" max="10" step="1"></div>                  
+                  <div class="input-group minus"></div>
+                  <label class="child" for="id-child">Дети:</label>
+                  <div class="input-group plus"></div>
+                  <div class="child"><input id="id-child" type="number" name="quantity" value="0" min="0" max="10" step="1"></div>                  
+                  <div class="input-group minus"></div>
+                  </div>                 
+                  <button type="submit">Найти</button>                  
                </form>
             </div>
             </div>
