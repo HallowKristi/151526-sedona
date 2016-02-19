@@ -622,7 +622,7 @@ h3 {
     position: absolute;
     left: 50%;
     margin-left: -286px;
-    top:-100px;
+    top:-107px;
     text-align: center;
     height: 480px;
     width: 572px;
@@ -632,7 +632,7 @@ h3 {
 .search h3 {
     background: #766357;
     min-height: 86px;
-    padding: 25px;
+    padding: 30px;
     color: white;
     text-align: center;
     margin-bottom: 50px;
@@ -671,7 +671,7 @@ h3 {
     font-weight: bold;
     text-align: left;
     border: none;
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -680,7 +680,8 @@ h3 {
     background: #f2f2f2;
     width: 346px;
     min-height: 35px;
-    padding: 0px 10px;
+    padding-left: 10px;
+    padding-right: 40px;
     font-size: 14px;
     line-height: 26px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -700,6 +701,8 @@ h3 {
     position: absolute;
     width: 23px;
     height: 23px;
+    right: 10px;
+    top: 5px;
     background-image: url("../img/calendar_grey.png");
     background-repeat: no-repeat;
     margin-left: 10px;
@@ -712,6 +715,7 @@ h3 {
 .search-form input:focus::after {
     background-image: url("../img/calendar_blue.png");
 }
+
 
 .input-group {
 	margin-bottom: 30px;
@@ -727,12 +731,16 @@ h3 {
 	width: 45px;
 	text-align: center;
 	margin-left: 0px;
+	padding-left: 0px;
+    padding-right: 0px;
 }
 
 .child input {
 	width: 45px;
 	text-align: center;
 	margin-left: 0px;
+	padding-left: 0px;
+    padding-right: 0px;
 }
 
 input:hover {
