@@ -1,5 +1,5 @@
 body {
-	font-family: "PTSans", sans-serif;
+	font-family: "PTSans", "Arial", sans-serif;
 	font-style: normal;
 	font-size:14px;
 	line-height:26px;
@@ -380,6 +380,8 @@ li.active a{
 	line-height:26px;
 	text-transform:uppercase;
 	cursor:pointer;
+	margin-left: 0px;
+	width: 300px;
 }
 
 .results h3:hover {
@@ -490,12 +492,15 @@ li .reservation:hover {
  }
 
 h1.index{
+	width: 550px;
     font-weight:bold;
     font-size:21px;
     line-height: 26px;
     text-align:center;
     margin-top: 60px;
     margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h2.index{
@@ -504,14 +509,19 @@ h2.index{
     text-align:center;
     font-weight: normal;
     margin-top: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 55px;
 }
 
 h3 {
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
     font-weight:bold;
     font-size:21px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
+
 
 .triangle-index {
     display: block;
@@ -533,7 +543,7 @@ h3 {
 .features-item p {
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .item-1 {
@@ -630,6 +640,7 @@ h3 {
 }
 
 .search h3 {
+	width: 572px;
     background: #766357;
     min-height: 86px;
     padding: 30px;
