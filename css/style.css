@@ -1,5 +1,5 @@
 body {
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-size:14px;
 	line-height:26px;
@@ -566,7 +566,7 @@ h3 {
 }
 
 .item-1 p {
-	width: 315px;
+	width: 298px;
 }
 
 .item-2 {
@@ -576,7 +576,7 @@ h3 {
 }
 
 .item-2 p {
-	width: 250px;
+	width: 230px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -586,9 +586,19 @@ h3 {
     float:left;
 }
 
+.item-3 p {
+	margin-right: 55px;
+	margin-left: 55px;
+}
+
 .item-4 {
     background-color:#eeeeee;
     float:left;
+}
+
+.item-4 p {
+	margin-right: 60px;
+	margin-left: 60px;
 }
 
 .item-5 {
@@ -620,6 +630,10 @@ h3 {
     padding-left: 40px;
     padding-right: 40px;
     box-sizing:border-box;
+}
+
+.service-item p {
+	width: 298px;
 }
 
 .house {
